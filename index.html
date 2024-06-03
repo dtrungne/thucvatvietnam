@@ -6,7 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cộng Động Cây Cỏ Việt Nam</title>
     <link rel="icon" href="../Favicon/title1.png" type="image/png">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: rgba(62 131 17 / 59%);
+            padding: 15px;
+            display: inline-block;
+            border-radius: 50px;
+        }
+
+        .container {
+            max-width: 1500px;
+            padding: 20px;
+            text-align: center;
+            margin: 50px auto;
+            border-radius: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .plant {
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 50px;
+            background-color: #f1f1f1;
+            flex: 1;
+            margin: 0 5px;
+            border: 1px solid transparent;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .plant img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 330px;
+            max-height: 230px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        header {
+            background-image: url('https://cdn3.vectorstock.com/i/1000x1000/99/22/seamless-textured-grass-background-on-lawn-vector-30229922.jpg');
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: rgba(18 49 15 / 78%);
+            padding: 15px;
+            display: inline-block;
+            border-radius: 50px;
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #f1f1f1;
+            background-color: rgba(0, 128, 0, 0.8);
+            text-align: center;
+        }
+
+        /* Xanh lá cho phần được chọn */
+        .plant:target {
+            background-color: #e6ffee;
+            border-color: #00cc66;
+        }
+        .community {
+            max-width: 1500px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 20px;
+            background-color: #e0ffe0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #f1f1f1;
+            background-color: rgba(0, 128, 0, 0.8);
+            text-align: center;
+        }
+
+        /* Xanh lá cho phần được chọn */
+        .plant:target {
+            background-color: #e6ffee;
+            border-color: #00cc66;
+        }
+
+        .community {
+            max-width: 1700px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 20px;
+            background-color: #e0ffe0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
