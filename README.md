@@ -1,1 +1,1 @@
-[Click Click Click ...]([github](https://dtrungne.github.io/thucvatvietnam/)
+[Click Click Click ...](https://dtrungne.github.io/thucvatvietnam/)
