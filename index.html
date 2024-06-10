@@ -244,4 +244,42 @@ Chào mừng bạn đến với "Cây Cỏ Việt Nam"! Chúng tôi là một c�
 
     </footer>
 </body>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+  // Lắng nghe sự kiện click trên tất cả các liên kết với href bắt đầu bằng #
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        // Cuộn đến phần tử mục tiêu
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+
+        // Xóa lớp CSS đổ nền từ các phần tử khác
+        document.querySelectorAll('.highlight').forEach(el => {
+          el.classList.remove('highlight');
+        });
+
+        // Thêm lớp CSS đổ nền cho phần tử mục tiêu
+        targetElement.classList.add('highlight');
+      }
+    });
+  });
+});
+
+// Thêm CSS để định dạng đổ nền viên cho phần tử mục tiêu
+const style = document.createElement('style');
+style.innerHTML = `
+  .highlight {
+    border: 2px solid red;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+`;
+document.head.appendChild(style);
+ </script>
 </html>
