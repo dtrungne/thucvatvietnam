@@ -244,7 +244,8 @@ Chào mừng bạn đến với "Cây Cỏ Việt Nam"! Chúng tôi là một c�
 
     </footer>
 </body>
-    <script>document.addEventListener('DOMContentLoaded', () => {
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
   // Lắng nghe sự kiện click trên tất cả các liên kết với href bắt đầu bằng #
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -275,8 +276,8 @@ Chào mừng bạn đến với "Cây Cỏ Việt Nam"! Chúng tôi là một c�
 const style = document.createElement('style');
 style.innerHTML = `
   .highlight {
-    border: 2px solid red;
-    padding: 10px;
+    background-color: #e6ffee;
+    border-color: #00cc66;
     transition: all 0.3s ease-in-out;
   }
 `;
